@@ -1,0 +1,1 @@
+web: gunicorn Fraichic.wsgi --log-file -
