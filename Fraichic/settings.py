@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^c1(j!qw*!&=cy3h_9x^9l)sb7!#-(eva$-418*(79kmgi74p1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['fraichic.herokuapp.com', 'localhost', '127.0.0.1']
 
