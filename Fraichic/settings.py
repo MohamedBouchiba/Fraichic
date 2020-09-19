@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['fraichic.herokuapp.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'webapp',
+    'storages',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -60,7 +61,7 @@ ROOT_URLCONF = 'Fraichic.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,3 +131,17 @@ STATIC_URL = '/static/'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+
+#S3 BUCKETS CONFIG
+
+AWS_ACCESS_KEY_ID = "AKIA3C3AU2JHHLN2NC5R"
+AWS_SECRET_ACCESS_KEY = "7z/S+UZRXqQ6pMTbLI+OzJfDw6V+biCq90qIyj0u"
+AWS_STORAGE_BUCKET_NAME = "fraichic-static"
+AWS_S3_REGION_NAME = 'eu-west-3' #change to your region
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+#STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
