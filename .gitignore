@@ -1,3 +1,6 @@
 ./venv/
 .idea
 ./staticfiles/
+Supprimerait staticfiles/css/
+Supprimerait staticfiles/js/
+db.sqlite3
