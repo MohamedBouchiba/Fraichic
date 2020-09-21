@@ -135,8 +135,6 @@ django_heroku.settings(locals())
 
 #S3 BUCKETS CONFIG
 
-AWS_ACCESS_KEY_ID = "AKIA3C3AU2JHHLN2NC5R"
-AWS_SECRET_ACCESS_KEY = "7z/S+UZRXqQ6pMTbLI+OzJfDw6V+biCq90qIyj0u"
 AWS_STORAGE_BUCKET_NAME = "fraichic-static"
 AWS_S3_REGION_NAME = 'eu-west-3' #change to your region
 AWS_S3_SIGNATURE_VERSION = 's3v4'
