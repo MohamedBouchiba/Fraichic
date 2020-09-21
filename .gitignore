@@ -4,5 +4,5 @@
 Supprimerait staticfiles/css/
 Supprimerait staticfiles/js/
 db.sqlite3
-./Fraichic/secret_keys.py
 Supprimerait Fraichic/__pycache__/secret_keys.cpython-38.pyc
+/Fraichic/secret_keys.py
