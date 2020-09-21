@@ -4,4 +4,4 @@
 Supprimerait staticfiles/css/
 Supprimerait staticfiles/js/
 db.sqlite3
-./Fraichic/007.py
+./Fraichic/secret_keys.py
