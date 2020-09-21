@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import django_heroku
+from . import secret_keys
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -22,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^c1(j!qw*!&=cy3h_9x^9l)sb7!#-(eva$-418*(79kmgi74p1'
+SECRET_KEY = secret_keys.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -135,8 +136,8 @@ django_heroku.settings(locals())
 
 #S3 BUCKETS CONFIG
 
-AWS_ACCESS_KEY_ID = "AKIA3C3AU2JHHLN2NC5R"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = secret_keys.AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY = secret_keys.AWS_SECRET_ACCESS_KEY
 AWS_STORAGE_BUCKET_NAME = "fraichic-static"
 AWS_S3_REGION_NAME = 'eu-west-3' #change to your region
 AWS_S3_SIGNATURE_VERSION = 's3v4'
